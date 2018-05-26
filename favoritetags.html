@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<!-- **************************************************************************************
+AUTHOR : Spencer Huebler-Davis
+EMAIL  : shuebler@svsu.edu
+URL    : csis.svsu.edu/~shuebler/cis255/favoritetags.html
+****************************************************************************************-->
+
+<html lang="en">
+
+<head>
+
+	<!-- Tab/Title -->
+	<title>Spencer Huebler-Davis, Student - Favorite Tags</title>
+	
+	<!-- Metadata -->
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="author" content="Spencer Huebler-Davis"/>
+	<meta name="contact" content="shuebler@svsu.edu"/>
+	<meta name="copyright" content="Spencer Huebler-Davis"/>
+	<meta name="description" content="essay"/>
+	<meta name="keywords" content="web, development, client side, front end, html"/>
+	
+	<style>
+		.twoColumn {column-count: 2;}
+		body {
+			max-width:750px;
+			margin: auto;
+			background: white;
+		}
+		
+		.firstTable, th, td {
+			border: 1px solid blue;
+		}
+		
+		.secondTable, th, td {
+			border: 0px;
+		}
+	</style>
+	
+</head>
+
+<body>
+
+	<form align="right" action="https://github.com/SpencerHD/cis255">
+		<input type="submit" value="Go to Github"/>
+	</form>
+
+	<!-- Name -->
+	
+	<h1 align="center">Spencer Huebler-Davis, Student</h1>
+	
+	<!-- Title -->
+	
+	<h2 align="center">MY FAVORITE HTML TAGS</h2>
+	
+	<hr />
+	
+	<div class="twoColumn">
+	
+	<!-- Intro -->
+	
+	<strong>Introduction:</strong>
+	<p>This essay is to describe my three favorite tags for the Hypertext Markup Language (HTML).
+	This document was made for CIS-255 SP18 at Saginaw Valley State University.</p>
+	
+	<hr />
+	
+	<!-- Essay -->
+	
+	<p><strong>&lt;abbr&gt;</strong> The <strong>abbreviation</strong> tag is one of the first tags
+	I learned about that I found very unique. With its ability to define an abbreviation or acronym,
+	the user can easily hover over the text needing a <abbr title="definition">defn.</abbr> and be 
+	able to understand it without needing to write it out on the document. This can be especially 
+	useful when making a clean presented web document that saves space, and also looks more 
+	professional.
+	
+	<hr />
+	
+	<p><strong>&lt;select&gt;</strong> The <strong>select</strong> tag is commonly used in webpages
+	everywhere. Its that simple dropdown menu you use when you go to select the state you live in,
+	for example, or the type of car you drive, i.e. 
+	<select>
+		<option value="Chevrolet">Chevrolet</option>
+		<option value="Ford">Ford</option>
+		<option value="Ferrari">Ferrari</option>
+		<option value="Toyota">Toyota</option>
+		<option value="Buick">Buick</option>
+	</select>
+	. These can be useful when filling out forms, gathering information, or simply to give the user
+	options when a certain answer is required. I like this tag not only because it can be very
+	useful, but also because it is user friendly and fairly simple to implement.</p>
+	
+	<hr />
+	
+	<p><strong>&lt;table&gt;</strong> The <strong>table</strong> tag is extremely useful when
+	presenting information in an organized fashion. With this tag, it allows you to use a
+	number of columns and rows, as well as set a border for the table, then add the header
+	and table contents as needed. You can modify the table in every way possible by using
+	different styles, as well as combining columns and rows. This can be done for multiple
+	tables in one document, setting the style for each one. An example of a table is used
+	below, where the average temperatures for each season were calculated for Saginaw,
+	Michigan.</p>
+	
+	<table align="center" class="firstTable">
+		<tr>
+			<th><abbr title="within the last decade">Seasons in Saginaw</abbr></th>
+			<th><abbr title="in Fahrenheit">Average Temperature</abbr></th>
+		</tr>
+		<tr>
+			<td>Winter</td>
+			<td>26.5 degrees F</td>
+		</tr>
+		<tr>
+			<td>Spring</td>
+			<td>57.2 degrees F</td>
+		</tr>
+		<tr>
+			<td>Summer</td>
+			<td>68 degrees F</td>
+		</tr>
+		<tr>
+			<td>Fall</td>
+			<td>38.7 degrees F</td>
+		</tr>
+		<tr>
+			<td>Annual Average</td>
+			<td>47.6 degrees F</td>
+		</tr>
+	</table>
+	
+	<hr />
+	
+	<!-- Conclusion -->
+	
+	<strong>Conclusion:</strong>
+	<p> While doing this assignment, I realized how many tags there are and how many purposes each
+	one can be used for in a web document. The three I chose stood out to me as unique, while also
+	useful in HTML to design a website. The abbreviation tag, select tag, and table tag seem to
+	like they are very useful in this language, as well as others, which there are many to learned
+	and apply for different situations.</p>
+	
+	</div>
+	
+	<hr />
+	
+	<!-- Table with Form -->
+
+	<table align="center" class="secondTable">
+		<tr>	
+			<th colspan="2" align="center"><h2>Course Lookup</h2></th>
+		</tr>
+		<tr>
+			<td><form action='https://csis.svsu.edu/~gpcorser/php/courses.php'>Course Prefix (Department)</td>
+			<td><input type='text' name='prefix'></td>
+		</tr>
+		<tr>
+			<td>Course Number</td>
+			<td><input type='text' name='courseNumber'></td>
+		</tr>
+		<tr>
+			<td>Instructor</td>
+			<td><input type='text' name='instructor'></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><input type='submit' value='Submit'></td>
+		</tr>
+		</form>
+	</table>
+	
+	<hr />
+	
+	<h4 align="center">Document designed for the purpose of CIS-255 at Saginaw Valley State University.</h4>
+	
+</body>
+	
+</html>
