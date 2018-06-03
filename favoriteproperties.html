@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<!-- **************************************************************************************
+AUTHOR : Spencer Huebler-Davis
+EMAIL  : shuebler@svsu.edu
+URL    : csis.svsu.edu/~shuebler/cis255/favoriteproperties.html
+****************************************************************************************-->
+
+<!--
+Twenty CSS properties demonstrated in this file are listed below. The properties that are also discussed are marked with asterisks. 
+	1. column-count       	see lines 50 and 57 
+	2. max-width 		        see line 52
+	3. *text-align	      	see lines 73-83
+	4. *visibility	        see lines 85-90
+	5. *animation		        see line 97
+	6. *color		  	        see lines 105-111
+	7. *direction		        see lines 113-115
+	8. background           see lines 63 and 70
+	9. background-color     see line 51
+	10. margin              see lines 62 and 69
+	11. width               see line 68
+	12. height              see line 94
+	13. position            see line 96
+	14. @keyframes          see lines 100-103
+	15. min-width           see line 54
+	16. @media              see lines 54-57
+	17. border              see line 122
+	18. transition-property see line 136
+	19. transition-duration see line 137
+	20. text-transform      see line 118
+  Extras:
+  21. hyphens             see line 149
+  22. line-height         see line 153
+  23. opacity             see line 133
+  24. font-weight         see line 145
+-->
+
+<html lang="en">
+
+<head>
+
+	<!-- Tab/Title -->
+	<title>Spencer Huebler-Davis, Student - Favorite Properties</title>
+	
+	<!-- Metadata -->
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="author" content="Spencer Huebler-Davis"/>
+	<meta name="contact" content="shuebler@svsu.edu"/>
+	<meta name="copyright" content="Spencer Huebler-Davis"/>
+	<meta name="description" content="essay"/>
+	<meta name="keywords" content="web, development, client side, front end, html, css"/>
+	
+	<style>
+		body {
+			background-color: lightgrey;
+		}
+		
+		@media screen and (min-width: 480px) {
+			body {
+				background-color: white;
+		}
+	
+		.twoColumn {column-count: 2;}
+		body {
+			max-width:750px;
+			margin: auto;
+			background: white;
+		}
+		
+		.threeColumn {column-count:3}
+		body {
+			margin: auto;
+			background: white;
+		}
+		
+		p.left {
+			text-align: left;
+		}
+		
+		p.center {
+			text-align: center;
+		}
+		
+		p.right {
+			text-align: right;
+		}
+		
+		p.a {
+			visibility: visible;
+		}
+		p.b {
+		  visibility: hidden;
+		}
+		
+		div.a {
+			width: 100px;
+			height: 100px;
+			background: blue;
+			position: relative;
+			animation: mymove 5s infinite;
+		}
+		
+		@keyframes mymove {
+			from {left: 50px;}
+			to {left: 0px;}
+		}
+		
+		p.blue {
+			color: blue;
+		}
+		
+		p.red {
+			color: red;
+		}
+		
+		p.rtl {
+			direction: rtl;
+		}
+   
+    h2 {
+      text-transform: uppercase;
+    }
+   
+    h3 {
+      border: 3px dotted black;
+      text-align: center;
+    }
+    
+    div.transition {
+      width: 100px;
+      height: 20px;
+      background: black;
+      opacity: 0.6;
+      transition-property: width;
+      transition-duration: 2s;
+      -webkit-transition: width 2s;
+    }
+    
+    div.transition:hover {
+      width: 750px;
+    }
+    
+    p.normal {
+      font-weight: normal;
+    }
+    
+    p {
+      hyphens: auto;
+    }
+    
+    p.height {
+      line-height: 1.6;
+    }
+	</style>
+	
+</head>
+
+<body>
+
+	<form align="right" action="https://github.com/SpencerHD/cis255">
+		<input type="submit" value="Go to Github"/>
+	</form>
+
+	<!-- Name -->
+	
+	<h1 align="center">Web Application Development</h1>
+	
+	<!-- Title -->
+	
+	<h2 align="center">my favorite css properties</h2>
+	
+	<hr />
+	
+	<div class="twoColumn">
+	
+		<!-- Intro -->
+		
+		<h3>Introduction</h3>
+		<p class="height">This essay is to describe my three favorite properties for the Hypertext Markup Language (HTML)
+		using CSS. This document was made for CIS-255 SP18 at Saginaw Valley State University. The photo
+    on the right features the computer I used to code this entire document on.</p>
+   
+   <img width="100%" src="mycodingcomputer.jpg" />
+	
+	</div>
+	
+	<hr />
+	
+	<div class="threeColumn">
+		
+		<!-- Body -->
+		
+		<h3>The <i>text-align</i> Property</h3>
+		<p>This has been one of my favorite properties to use so far as it helps with aligning text not
+		only inside paragraphs, but inside tables as well. You can left, center, or right align text
+		inside columns, tables, or without any sort of formatting at all. For this example, I've created
+		a stair-like figure by using each of the alignments that can be used with this property:</p>
+		<p class="left"><strong>left</strong></p>
+		<p class="center"><strong>center</strong></p>
+		<p class="right"><strong>right</strong></p>
+		
+		<h3>The <i>visibility</i> Property</h3>
+		<p>This property struck me as an interesting thing to use in your webpages. The property allows
+		you to change the visibility of an element to either being visible, or hidden. <p class="a">For 
+		example, the sentence being written here is visible for you to see, classified as sentence "a", but
+		the sentence that follows, classified as "b", is invisible.</p><p class="b">This sentence is
+		hidden to the viewer, but in the code it is there under the property of "hidden."</p> This is 
+		implemented by stating in the style section that one sentence is visible, and the other is
+		hidden. The space is still filled with the sentence that would be there, but is instead invisible
+		to the user.</p>
+		
+		<h3>The <i>animation</i> Property</h3>
+		<p>When I saw this property, I immediately wanted to play with it. This property animates an element
+		on screen to move its position from one place to another. In this particular example, a box is made
+		that is coded to move from 50px on the right to 0px on the left of the screen in the column, then 
+    reset after 5 seconds:</p>
+		<div class="a"></div>
+		
+		<p><strong>Note:</strong> The animation property is not supported by Internet Explorer 9 and earlier
+		versions, and this particular example was also not coded to work with Safari browsers.</p>
+		
+		<h3>The <i>color</i> Property</h3>
+		<p>This is a simple, but very useful property that makes text more creative in your document. With
+		it, you can change the color of text inside a heading or paragraph, defined inside the style
+		section. <p class="blue">For example, this sentence can be made blue.</p> <p class="red">Then, this 
+		sentence can be made red.</p> Its a very simple property that allows you to change colors of text,
+		and can be used in different scenarios to increase creativity.</p>
+		
+		<h3>The <i>direction</i> Property</h3>
+		<p>This property is useful for for defining the direction in which text goes on a page, or in this
+		instance, inside of a column. Similar to how you would reverse text, you define this property in
+		the style section, and tell a header or sentence to go in a different direction. If I wanted to,
+		for whatever reason, create text that starts in an opposite direction of the previous paragraph,
+		I would:</p>
+		<p>write a sentence that goes in the normal direction on page, then</p>
+		<p class="rtl">use the direction "rtl" to set the text to go from right to left.</p>
+		
+	</div>
+	
+	<hr />
+	
+  <div class="transition"></div>
+	<h3>Conclusion</h3>
+	<p>In short, all of these properties are defined inside the style section at the beginning of the code,
+	and can implement all sorts of different actions and styles to create diversity inside your document.
+	The ones I chose were those that stood out most to me, and with a little creativity, can be used to 
+	create almost any interesting webpage of your design. In addition, on mobile, using media queries,
+	this document will appear to have a light grey background compared to the white background it displays
+	on desktop.</p>
+	
+	<hr />
+	
+	<h3>Chrome DevTools</h3>
+	<p>Here is a screenshot of the webpage title changing color to purple using Chrome DevTools:</p>
+  
+  <img width="100%" src="https://csis.svsu.edu/~shuebler/cis255/screenshot.jpg" />
+	
+	<hr />
+	
+	<footer>
+		<p class="normal" align="center" id="copyright">&copy; 2018 Spencer Huebler-Davis. </p>
+	</footer>
+	
+</body>
+
+</html>
